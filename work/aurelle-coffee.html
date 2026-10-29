@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Aurelle Coffee Roasters — Designed by Mogify Studio</title><meta name="description" content="A concept landing page for a fictional specialty coffee roaster, designed and built in code by Mogify Studio."><meta name="robots" content="noindex"><link rel="icon" href="../favicon.png"><style>@font-face{font-family:"Manrope";font-weight:200 800;font-display:swap;src:url(../assets/fonts/manrope-latin.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:300 700;font-display:swap;src:url(fonts/Fraunces.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:400 700;font-display:swap;src:url(fonts/SpaceGrotesk.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:400 700;font-display:swap;src:url(fonts/Inter.woff2) format("woff2")}
+*,*::before,*::after{box-sizing:border-box}body{margin:0;-webkit-font-smoothing:antialiased}img,svg{display:block;max-width:100%}a{color:inherit;text-decoration:none}h1,h2,h3,p{margin:0}ul{list-style:none;margin:0;padding:0}.mg-rib{position:absolute;left:16px;bottom:16px;z-index:50;display:flex;align-items:center;gap:8px;padding:8px 14px 8px 8px;border-radius:99px;background:#121927;color:#fff;font:600 12px/1 "Manrope",system-ui,sans-serif;letter-spacing:.04em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}.mg-rib img{width:22px;height:22px}.mg-rib b{color:#00A99D}
+:root{--cream:#f3ebe0;--esp:#2a1b14;--terra:#c45f37;--sand:#e4d5c1;--olive:#6b6a3a}
+body{background:var(--cream);color:var(--esp);font-family:"Manrope",sans-serif}
+.w{max-width:1280px;margin:0 auto;padding:0 40px}
+nav{display:flex;align-items:center;justify-content:space-between;padding:28px 0}
+.logo{font-family:"Fraunces",serif;font-size:30px;font-weight:600;letter-spacing:-.02em}
+.logo i{color:var(--terra);font-style:normal}
+nav ul{display:flex;gap:34px;font-weight:600;font-size:15px}
+.nbtn{padding:12px 22px;border-radius:99px;background:var(--esp);color:var(--cream);font-weight:700;font-size:14px}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:40px;align-items:center;padding:40px 0 90px}
+.tag{display:inline-block;padding:8px 14px;border:1px solid rgba(42,27,20,.25);border-radius:99px;font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:28px}
+h1{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(54px,7.4vw,112px);line-height:.95;letter-spacing:-.035em}
+h1 em{font-style:italic;color:var(--terra);padding-right:.1em}
+.lead{font-size:19px;line-height:1.6;max-width:44ch;margin:28px 0 36px;color:#5b4639}
+.btns{display:flex;gap:14px}
+.b1{padding:18px 30px;border-radius:99px;background:var(--terra);color:#fff;font-weight:700}
+.b2{padding:18px 30px;border-radius:99px;border:1.5px solid var(--esp);font-weight:700}
+.stage{position:relative;height:600px}
+.sun{position:absolute;inset:40px 30px 60px 60px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#e7895f,var(--terra) 60%,#a44a28)}
+.bag{position:absolute;left:50%;top:52%;width:270px;height:380px;transform:translate(-50%,-50%) rotate(-6deg);border-radius:18px 18px 26px 26px;background:linear-gradient(160deg,#3a271d,#1e130e);box-shadow:30px 40px 60px -20px rgba(42,27,20,.55);overflow:hidden}
+.bag::before{content:"";position:absolute;left:0;right:0;top:0;height:46px;background:repeating-linear-gradient(90deg,#2a1b14 0 6px,#33231a 6px 12px)}
+.label{position:absolute;left:26px;right:26px;top:96px;bottom:44px;border-radius:12px;background:var(--cream);padding:22px;display:flex;flex-direction:column;justify-content:space-between}
+.label .n{font-family:"Fraunces",serif;font-size:34px;line-height:1;letter-spacing:-.02em}
+.label .o{font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--terra)}
+.label .notes{display:flex;gap:6px;flex-wrap:wrap}.label .notes span{font-size:11px;font-weight:700;padding:5px 9px;border-radius:99px;background:var(--sand)}
+.badge{position:absolute;right:0;top:20px;width:150px;height:150px;animation:spin 18s linear infinite}
+.badge text{font:700 13px "Manrope";letter-spacing:.24em;fill:var(--esp)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.bean{position:absolute;width:44px;height:30px;border-radius:50%;background:#3a2419;box-shadow:inset -6px -4px 0 rgba(0,0,0,.25)}
+.bean::after{content:"";position:absolute;left:50%;top:4px;bottom:4px;width:3px;margin-left:-1.5px;border-radius:3px;background:#1b0f0a;transform:rotate(12deg)}
+.marq{background:var(--esp);color:var(--cream);padding:22px 0;overflow:hidden;white-space:nowrap;font-family:"Fraunces",serif;font-size:38px;font-style:italic}
+.marq span{display:inline-block;padding-right:40px}.marq b{color:var(--terra);font-style:normal}
+section{padding:110px 0}
+.h2{font-family:"Fraunces",serif;font-size:64px;font-weight:400;letter-spacing:-.03em;line-height:1}
+.h2 em{font-style:italic;color:var(--terra)}
+.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:54px;gap:30px}
+.head p{max-width:40ch;color:#5b4639;line-height:1.6}
+.origins{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.og{border-radius:26px;padding:30px;min-height:360px;display:flex;flex-direction:column;justify-content:space-between;color:#fff;position:relative;overflow:hidden}
+.og:nth-child(1){background:linear-gradient(160deg,#c45f37,#8e3b1c)}.og:nth-child(2){background:linear-gradient(160deg,#6b6a3a,#3f3e1f)}.og:nth-child(3){background:linear-gradient(160deg,#3a271d,#1a0f0a)}
+.og .num{font-family:"Fraunces",serif;font-size:120px;line-height:.8;opacity:.18;position:absolute;right:18px;top:18px}
+.og h3{font-family:"Fraunces",serif;font-size:40px;font-weight:400}
+.og p{opacity:.85;line-height:1.5;margin-top:8px}
+.og ul{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.og li{padding:6px 12px;border-radius:99px;background:rgba(255,255,255,.16);font-size:13px;font-weight:700}
+.alt{background:var(--sand)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;counter-reset:s}
+.st{border-top:2px solid var(--esp);padding-top:24px}
+.st b{font-family:"Fraunces",serif;font-size:56px;font-weight:400;color:var(--terra);display:block;line-height:1;margin-bottom:12px}
+.st h3{font-size:22px;margin-bottom:8px}.st p{color:#5b4639;line-height:1.6}
+.cta{background:var(--terra);color:#fff;border-radius:36px;padding:80px;display:grid;grid-template-columns:1.4fr 1fr;gap:40px;align-items:center}
+.cta .h2 em{color:var(--esp)}
+.form{display:flex;background:#fff;border-radius:99px;padding:8px}.form span{flex:1;padding:14px 20px;color:#9a8b80}.form b{padding:14px 26px;border-radius:99px;background:var(--esp);color:#fff}
+footer{padding:50px 0;display:flex;justify-content:space-between;font-size:14px;color:#5b4639}
+body{position:relative}</style></head><body><div class="w">
+<nav><span class="logo">Aurelle<i>.</i></span><ul><li>Shop</li><li>Origins</li><li>Subscribe</li><li>Journal</li></ul><span class="nbtn">Start a subscription</span></nav>
+<div class="hero"><div><span class="tag">Small-batch · Roasted weekly</span><h1>Slow roasted.<br><em>Loud</em> flavour.</h1><p class="lead">Single-origin beans, roasted in tiny batches and shipped within 48 hours, so every cup tastes like the farm it came from.</p><div class="btns"><span class="b1">Shop the roasts</span><span class="b2">Find your flavour</span></div></div>
+<div class="stage"><div class="sun"></div>
+<svg class="badge" viewBox="0 0 150 150"><defs><path id="c" d="M75 75m-58 0a58 58 0 1 1 116 0a58 58 0 1 1 -116 0"/></defs><text><textPath href="#c">FRESHLY ROASTED · EVERY WEEK · </textPath></text><circle cx="75" cy="75" r="26" fill="#2a1b14"/></svg>
+<div class="bag"><div class="label"><span class="o">Ethiopia · Yirgacheffe</span><span class="n">Morning<br>Bloom</span><div class="notes"><span>Jasmine</span><span>Peach</span><span>Honey</span></div></div></div>
+<span class="bean" style="left:30px;top:420px;transform:rotate(30deg)"></span><span class="bean" style="right:60px;top:470px;transform:rotate(-20deg)"></span><span class="bean" style="left:90px;top:90px;transform:rotate(70deg) scale(.8)"></span></div></div></div>
+<div class="marq"><span>Washed <b>✺</b> Natural <b>✺</b> Honey processed <b>✺</b> Light roast <b>✺</b> Espresso <b>✺</b> Filter <b>✺</b> Washed <b>✺</b> Natural <b>✺</b> Honey processed <b>✺</b></span></div>
+<section><div class="w"><div class="head"><h2 class="h2">Three farms,<br><em>three</em> personalities.</h2><p>Every roast tells you where it grew, who grew it and what it tastes like, before you open the bag.</p></div>
+<div class="origins"><div class="og"><span class="num">01</span><div><h3>Ethiopia</h3><p>Floral, bright and tea-like. Our lightest roast.</p></div><ul><li>Jasmine</li><li>Peach</li><li>Bergamot</li></ul></div>
+<div class="og"><span class="num">02</span><div><h3>Colombia</h3><p>Round and sweet with a chocolate finish.</p></div><ul><li>Cocoa</li><li>Red apple</li><li>Caramel</li></ul></div>
+<div class="og"><span class="num">03</span><div><h3>Guatemala</h3><p>Bold, nutty and built for espresso.</p></div><ul><li>Hazelnut</li><li>Molasses</li><li>Spice</li></ul></div></div></div></section>
+<section class="alt"><div class="w"><div class="head"><h2 class="h2">Your ritual,<br><em>on repeat.</em></h2><p>Pick a roast, choose how often, and we handle the rest. Pause or swap any time.</p></div>
+<div class="steps"><div class="st"><b>01</b><h3>Choose your roast</h3><p>Take the 30-second flavour quiz or pick a farm you love.</p></div><div class="st"><b>02</b><h3>Set your rhythm</h3><p>Weekly, fortnightly or monthly, ground or whole bean.</p></div><div class="st"><b>03</b><h3>Brew it fresh</h3><p>Roasted on Monday, at your door by Wednesday.</p></div></div></div></section>
+<section><div class="w"><div class="cta"><h2 class="h2">Taste the <em>difference</em><br>in your first cup.</h2><div><p style="margin-bottom:22px;line-height:1.6;opacity:.9">Join the list for new roasts and brewing guides.</p><div class="form"><span>Your email</span><b>Join</b></div></div></div></div></section>
+<div class="w"><footer><span class="logo" style="font-size:22px">Aurelle<i>.</i></span><span>Designed by Mogify Studio</span></footer></div>
+<a class="mg-rib" href="../#work"><img src="../assets/brand/mogify-mark-w.png" alt="">Designed by <b>Mogify Studio</b></a></body></html>

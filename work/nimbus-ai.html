@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Nimbus AI — Designed by Mogify Studio</title><meta name="description" content="A landing page for a fictional AI product, designed and built in code by Mogify Studio."><meta name="robots" content="noindex"><link rel="icon" href="../favicon.png"><style>@font-face{font-family:"Manrope";font-weight:200 800;font-display:swap;src:url(../assets/fonts/manrope-latin.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:300 700;font-display:swap;src:url(fonts/Fraunces.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:400 700;font-display:swap;src:url(fonts/SpaceGrotesk.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:400 700;font-display:swap;src:url(fonts/Inter.woff2) format("woff2")}
+*,*::before,*::after{box-sizing:border-box}body{margin:0;-webkit-font-smoothing:antialiased}img,svg{display:block;max-width:100%}a{color:inherit;text-decoration:none}h1,h2,h3,p{margin:0}ul{list-style:none;margin:0;padding:0}.mg-rib{position:absolute;left:16px;bottom:16px;z-index:50;display:flex;align-items:center;gap:8px;padding:8px 14px 8px 8px;border-radius:99px;background:#121927;color:#fff;font:600 12px/1 "Manrope",system-ui,sans-serif;letter-spacing:.04em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}.mg-rib img{width:22px;height:22px}.mg-rib b{color:#00A99D}
+:root{--bg:#f2f1fb;--ink:#14122b;--mut:#6a6889;--v:#6d5cff;--p:#ff7ad9;--c:#4fd1ff}
+body{background:var(--bg);color:var(--ink);font-family:"Inter",sans-serif;overflow-x:hidden}
+.w{max-width:1280px;margin:0 auto;padding:0 40px;position:relative}
+.orb{position:absolute;border-radius:50%;filter:blur(0);background:radial-gradient(circle at 30% 30%,#fff 0,var(--c) 18%,var(--v) 55%,#2a1f7a 100%);box-shadow:inset -30px -40px 80px rgba(20,18,43,.45),0 60px 120px -40px rgba(109,92,255,.6)}
+.o1{width:420px;height:420px;right:-60px;top:80px}
+.o2{width:150px;height:150px;left:52%;top:300px;background:radial-gradient(circle at 30% 30%,#fff 0,#ffd1f2 20%,var(--p) 60%,#8a1f6a 100%)}
+.o3{width:90px;height:90px;right:40%;top:120px;background:radial-gradient(circle at 30% 30%,#fff,#bff0ff 25%,var(--c) 60%,#0b5f8a)}
+nav{display:flex;align-items:center;justify-content:space-between;padding:24px 0;position:relative;z-index:2}
+.logo{font-family:"Space Grotesk";font-weight:700;font-size:24px;display:flex;gap:8px;align-items:center}.logo i{width:24px;height:24px;border-radius:50%;background:conic-gradient(var(--v),var(--p),var(--c),var(--v))}
+.glassnav{display:flex;gap:6px;padding:6px;border-radius:99px;background:rgba(255,255,255,.55);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.8);font-size:14px;font-weight:600}
+.glassnav span{padding:9px 16px;border-radius:99px}.glassnav .on{background:var(--ink);color:#fff}
+.go{padding:12px 20px;border-radius:99px;background:var(--ink);color:#fff;font-weight:600;font-size:14px}
+.hero{padding:80px 0 60px;position:relative;z-index:2}
+.badge{display:inline-flex;gap:8px;align-items:center;padding:8px 14px;border-radius:99px;background:rgba(255,255,255,.7);border:1px solid #fff;font-size:13px;font-weight:600;backdrop-filter:blur(10px)}
+.badge i{width:8px;height:8px;border-radius:50%;background:#22c55e}
+h1{font-family:"Space Grotesk";font-size:clamp(62px,8.4vw,132px);line-height:.9;letter-spacing:-.055em;margin:26px 0 24px;max-width:10ch}
+h1 span{background:linear-gradient(100deg,var(--v),var(--p) 60%,#ffa95c);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:20px;color:var(--mut);max-width:42ch;line-height:1.55}
+.cta{display:flex;gap:12px;margin-top:34px}
+.b1{padding:17px 28px;border-radius:99px;background:linear-gradient(100deg,var(--v),#8f7dff);color:#fff;font-weight:700;box-shadow:0 20px 40px -14px rgba(109,92,255,.7)}
+.b2{padding:17px 28px;border-radius:99px;background:rgba(255,255,255,.7);border:1px solid #fff;font-weight:700}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:16px;padding:40px 0 120px;position:relative;z-index:2}
+.t{border-radius:28px;padding:26px;background:rgba(255,255,255,.62);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.9);box-shadow:0 30px 60px -40px rgba(20,18,43,.35);position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between}
+.t h3{font-family:"Space Grotesk";font-size:24px;letter-spacing:-.02em;margin:0}.t p{color:var(--mut);font-size:14px;line-height:1.5;margin-top:6px}
+.t.big{grid-column:span 2;grid-row:span 2;background:linear-gradient(150deg,#1a1640,#2b2170 60%,#4b2a8a);color:#fff;border-color:rgba(255,255,255,.1)}
+.t.big p{color:rgba(255,255,255,.7)}
+.chat{display:grid;gap:10px;margin-top:10px}
+.msg{max-width:78%;padding:12px 16px;border-radius:18px;font-size:14px;line-height:1.4}
+.msg.u{justify-self:end;background:rgba(255,255,255,.14);border-bottom-right-radius:6px}
+.msg.a{background:linear-gradient(100deg,var(--v),#9a6bff);border-bottom-left-radius:6px}
+.inp{display:flex;align-items:center;gap:10px;padding:10px 10px 10px 18px;border-radius:99px;background:rgba(255,255,255,.1);font-size:14px;color:rgba(255,255,255,.6)}.inp b{margin-left:auto;width:36px;height:36px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--v)}
+.t.wide{grid-column:span 2}
+.num{font-family:"Space Grotesk";font-size:64px;font-weight:700;letter-spacing:-.05em;line-height:1;background:linear-gradient(100deg,var(--v),var(--p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.wave{display:flex;align-items:center;gap:4px;height:60px}.wave i{flex:1;border-radius:4px;background:linear-gradient(180deg,var(--p),var(--v))}
+.dots{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}.dots i{aspect-ratio:1;border-radius:6px;background:#e4e1fb}.dots i.on{background:var(--v)}.dots i.p{background:var(--p)}
+.mini-orb{position:absolute;right:-30px;bottom:-30px;width:160px;height:160px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#fff,#bff0ff 25%,var(--c) 60%,#0b5f8a);opacity:.9}
+.logos{display:flex;justify-content:space-between;align-items:center;padding:30px 0 90px;color:#a5a3c2;font-family:"Space Grotesk";font-weight:700;font-size:22px;letter-spacing:-.02em;position:relative;z-index:2}
+footer{padding:36px 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px;border-top:1px solid #dcdaf0}
+body{position:relative}</style></head><body><div class="w"><span class="orb o1"></span><span class="orb o2"></span><span class="orb o3"></span>
+<nav><span class="logo"><i></i>Nimbus</span><div class="glassnav"><span class="on">Product</span><span>Agents</span><span>Pricing</span><span>Docs</span></div><span class="go">Try Nimbus</span></nav>
+<div class="hero"><span class="badge"><i></i>Nimbus 2 is live</span><h1>Think less. <span>Ship more.</span></h1><p class="lead">An AI workspace that drafts, plans and builds alongside your team, so the busywork disappears and the good ideas stay.</p><div class="cta"><span class="b1">Start for free</span><span class="b2">Watch the film</span></div></div>
+<div class="bento"><div class="t big"><div><h3>Your team's second brain</h3><p>Ask anything about your docs, tickets and calls.</p></div><div class="chat"><div class="msg u">Summarise this week's launch feedback</div><div class="msg a">Three themes stood out: faster onboarding, clearer pricing and dark mode. Want a plan for each?</div><div class="inp">Ask Nimbus…<b>↑</b></div></div></div>
+<div class="t"><span class="num">4.2×</span><div><h3>Faster drafts</h3><p>From blank page to first version.</p></div></div>
+<div class="t" style="background:linear-gradient(150deg,#ffe3f6,#fff)"><div class="wave"><i style="height:30%"></i><i style="height:60%"></i><i style="height:45%"></i><i style="height:80%"></i><i style="height:100%"></i><i style="height:70%"></i><i style="height:50%"></i><i style="height:85%"></i><i style="height:40%"></i><i style="height:65%"></i><i style="height:90%"></i><i style="height:55%"></i><i style="height:35%"></i><i style="height:75%"></i><i style="height:60%"></i><i style="height:45%"></i><i style="height:30%"></i><i style="height:55%"></i><i style="height:80%"></i><i style="height:40%"></i></div><div><h3>Voice notes</h3><p>Talk, and it writes.</p></div></div>
+<div class="t wide"><div class="dots"><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class="p"></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class="p"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class="p"></i><i class=""></i><i class=""></i><i class=""></i><i class="on"></i><i class=""></i><i class=""></i><i class="p"></i><i class=""></i><i class="on"></i><i class=""></i></div><div><h3>Agents that run on schedule</h3><p>Reports, follow-ups and digests, handled every morning.</p></div></div>
+<div class="t"><span class="mini-orb"></span><div><h3>Private by default</h3><p>Your data never trains anyone else's model.</p></div></div>
+<div class="t" style="background:var(--ink);color:#fff"><h3 style="font-size:34px">Integrates with your stack</h3><p style="color:rgba(255,255,255,.6)">Docs, chat, mail, code.</p></div><div class="t wide" style="background:linear-gradient(120deg,#6d5cff,#ff7ad9 70%,#ffa95c);color:#fff;border-color:transparent"><h3 style="font-size:40px;max-width:12ch">Plans, drafts and code in one place.</h3><p style="color:rgba(255,255,255,.85)">One workspace for the whole team.</p></div></div>
+<footer><span class="logo" style="font-size:18px"><i style="width:18px;height:18px"></i>Nimbus</span><span>Designed by Mogify Studio</span></footer></div>
+<a class="mg-rib" href="../#work"><img src="../assets/brand/mogify-mark-w.png" alt="">Designed by <b>Mogify Studio</b></a></body></html>

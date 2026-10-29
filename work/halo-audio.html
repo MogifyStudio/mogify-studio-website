@@ -1,0 +1,48 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Halo Audio — Designed by Mogify Studio</title><meta name="description" content="A product launch page for a fictional pair of headphones, designed and built in code by Mogify Studio."><meta name="robots" content="noindex"><link rel="icon" href="../favicon.png"><style>@font-face{font-family:"Manrope";font-weight:200 800;font-display:swap;src:url(../assets/fonts/manrope-latin.woff2) format("woff2")}
+@font-face{font-family:"Fraunces";font-weight:300 700;font-display:swap;src:url(fonts/Fraunces.woff2) format("woff2")}
+@font-face{font-family:"Space Grotesk";font-weight:400 700;font-display:swap;src:url(fonts/SpaceGrotesk.woff2) format("woff2")}
+@font-face{font-family:"Inter";font-weight:400 700;font-display:swap;src:url(fonts/Inter.woff2) format("woff2")}
+*,*::before,*::after{box-sizing:border-box}body{margin:0;-webkit-font-smoothing:antialiased}img,svg{display:block;max-width:100%}a{color:inherit;text-decoration:none}h1,h2,h3,p{margin:0}ul{list-style:none;margin:0;padding:0}.mg-rib{position:absolute;left:16px;bottom:16px;z-index:50;display:flex;align-items:center;gap:8px;padding:8px 14px 8px 8px;border-radius:99px;background:#121927;color:#fff;font:600 12px/1 "Manrope",system-ui,sans-serif;letter-spacing:.04em;text-decoration:none;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}.mg-rib img{width:22px;height:22px}.mg-rib b{color:#00A99D}
+:root{--bg:#0a0a0c;--ink:#f5f3ee;--mut:#9a978f;--amber:#ffb547;--copper:#d9773b}
+body{background:var(--bg);color:var(--ink);font-family:"Manrope",sans-serif}
+.w{max-width:1280px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;font-size:14px;font-weight:600}
+nav ul{display:flex;gap:30px;color:var(--mut)}
+.logo{font-weight:800;font-size:22px;letter-spacing:.32em}
+.buy{padding:11px 20px;border-radius:99px;border:1px solid rgba(255,255,255,.25)}
+.hero{position:relative;text-align:center;padding:40px 0 0;overflow:hidden}
+.big{font-size:clamp(120px,20vw,300px);font-weight:800;letter-spacing:-.06em;line-height:.8;background:linear-gradient(180deg,#2a2826,#0a0a0c 85%);-webkit-background-clip:text;background-clip:text;color:transparent;user-select:none}
+.hp{position:relative;width:520px;margin:-210px auto 0}
+.hp svg{width:100%;filter:drop-shadow(0 60px 80px rgba(217,119,59,.35))}
+.glow{position:absolute;left:50%;top:55%;width:700px;height:300px;transform:translate(-50%,-50%);background:radial-gradient(closest-side,rgba(255,181,71,.35),transparent);z-index:-1}
+.hero h1{font-size:64px;letter-spacing:-.04em;margin-top:20px}
+.hero p{color:var(--mut);font-size:19px;margin:14px auto 30px;max-width:44ch;line-height:1.55}
+.btns{display:flex;justify-content:center;gap:12px}
+.b1{padding:17px 30px;border-radius:99px;background:linear-gradient(100deg,var(--amber),var(--copper));color:#140b04;font-weight:800}
+.b2{padding:17px 30px;border-radius:99px;border:1px solid rgba(255,255,255,.25);font-weight:700}
+.sw{display:flex;justify-content:center;gap:12px;margin-top:30px}.sw i{width:26px;height:26px;border-radius:50%;border:2px solid #333}.sw i.on{outline:2px solid var(--amber);outline-offset:3px}
+section{padding:120px 0}
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.08);border-radius:28px;overflow:hidden}
+.sp{background:#121214;padding:40px 30px}
+.sp b{display:block;font-size:56px;font-weight:800;letter-spacing:-.05em;background:linear-gradient(100deg,#fff,var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.sp span{color:var(--mut)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.panel{border-radius:32px;min-height:440px;padding:44px;display:flex;flex-direction:column;justify-content:flex-end;position:relative;overflow:hidden}
+.panel h3{font-size:40px;letter-spacing:-.04em;margin-bottom:10px}.panel p{color:rgba(255,255,255,.7);max-width:34ch;line-height:1.6}
+.p1{background:radial-gradient(circle at 70% 30%,#5a3518,#1a120c 70%)}
+.p2{background:radial-gradient(circle at 30% 30%,#1f2a3a,#0d1117 70%)}
+.eq{position:absolute;top:50px;left:44px;right:44px;display:flex;align-items:center;gap:6px;height:140px}.eq i{flex:1;border-radius:6px;background:linear-gradient(180deg,var(--amber),var(--copper))}
+.anc{position:absolute;top:40px;right:40px;width:200px;height:200px;border-radius:50%;border:1px solid rgba(255,255,255,.15);box-shadow:0 0 0 30px rgba(255,255,255,.03),0 0 0 60px rgba(255,255,255,.02)}
+.anc::after{content:"";position:absolute;inset:60px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#7fb6ff,#1f4f9e)}
+.h2{font-size:72px;letter-spacing:-.05em;line-height:.95;margin-bottom:50px;max-width:14ch}
+footer{padding:36px 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px;border-top:1px solid #1f1f22}
+body{position:relative}</style></head><body><div class="w">
+<nav><span class="logo">HALO</span><ul><li>Overview</li><li>Sound</li><li>Design</li><li>Specs</li></ul><span class="buy">Pre-order</span></nav>
+<div class="hero"><div class="big">HALO</div><div class="hp"><div class="glow"></div><svg viewBox="0 0 520 440" aria-hidden="true"><defs><linearGradient id="band" x1="0" x2="1"><stop offset="0" stop-color="#3a2a1e"/><stop offset=".5" stop-color="#8a5a33"/><stop offset="1" stop-color="#3a2a1e"/></linearGradient><linearGradient id="cup" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f3d2a5"/><stop offset=".45" stop-color="#d9773b"/><stop offset="1" stop-color="#5a2e12"/></linearGradient><radialGradient id="pad" cx=".4" cy=".35"><stop offset="0" stop-color="#3b3632"/><stop offset="1" stop-color="#111"/></radialGradient></defs>
+<path d="M90 250 C90 90 430 90 430 250" fill="none" stroke="url(#band)" stroke-width="34" stroke-linecap="round"/><path d="M110 240 C120 120 400 120 410 240" fill="none" stroke="#1a1410" stroke-width="10" stroke-linecap="round" opacity=".6"/>
+<rect x="40" y="220" width="130" height="190" rx="62" fill="url(#cup)"/><rect x="62" y="240" width="86" height="150" rx="43" fill="url(#pad)"/><ellipse cx="88" cy="270" rx="12" ry="26" fill="#fff" opacity=".18"/>
+<rect x="350" y="220" width="130" height="190" rx="62" fill="url(#cup)"/><rect x="372" y="240" width="86" height="150" rx="43" fill="url(#pad)"/><ellipse cx="398" cy="270" rx="12" ry="26" fill="#fff" opacity=".18"/></svg></div><h1>Silence, beautifully made.</h1><p>Studio-grade sound, adaptive noise cancelling and a frame light enough to forget you're wearing it.</p><div class="btns"><span class="b1">Pre-order now</span><span class="b2">Hear the difference</span></div><div class="sw"><i class="on" style="background:#d9773b"></i><i style="background:#e9e4da"></i><i style="background:#1d1d1f"></i><i style="background:#6f7f6a"></i></div></div>
+<section><div class="specs"><div class="sp"><b>40h</b><span>Battery life</span></div><div class="sp"><b>-45dB</b><span>Adaptive ANC</span></div><div class="sp"><b>210g</b><span>Featherweight frame</span></div><div class="sp"><b>5 min</b><span>Charge, 3h play</span></div></div></section>
+<section style="padding-top:0"><h2 class="h2">Every detail, tuned by ear.</h2><div class="split"><div class="panel p1"><div class="eq"><i style="height:20%"></i><i style="height:45%"></i><i style="height:70%"></i><i style="height:35%"></i><i style="height:90%"></i><i style="height:60%"></i><i style="height:100%"></i><i style="height:55%"></i><i style="height:75%"></i><i style="height:40%"></i><i style="height:85%"></i><i style="height:30%"></i><i style="height:65%"></i><i style="height:95%"></i><i style="height:50%"></i><i style="height:25%"></i><i style="height:70%"></i><i style="height:45%"></i></div><h3>Spatial sound</h3><p>Music that wraps around you, tuned for every genre.</p></div><div class="panel p2"><span class="anc"></span><h3>Quiet, on cue</h3><p>Noise cancelling that adapts to the room in real time.</p></div></div></section>
+<footer><span class="logo" style="font-size:16px">HALO</span><span>Designed by Mogify Studio</span></footer></div>
+<a class="mg-rib" href="../#work"><img src="../assets/brand/mogify-mark-w.png" alt="">Designed by <b>Mogify Studio</b></a></body></html>
